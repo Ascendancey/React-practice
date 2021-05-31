@@ -1,6 +1,6 @@
 # About
 
-This repository is used to store the code while practicing React.js.
+This is the expense tracker training project. Repository is used to store the code while practicing React.js.
 
 # Getting Started with Create React App
 
