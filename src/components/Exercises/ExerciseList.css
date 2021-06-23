@@ -1,0 +1,77 @@
+.exercises {
+  padding: 1rem;
+  background-color: #181c27;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+
+.exercises-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercises-list__fallback {
+    color: white;
+    text-align: center;
+  }
+
+  .exercises-list label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .exercises-list button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #05a275;
+    background-color: #05a275;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    float: right;
+  }
+  
+  .exercises-list button:hover,
+  .exercises-list button:active {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  .exercises-list button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .exercises-list button.alternative:hover,
+  .exercises-list button.alternative:active {
+    background-color: #ddb3f8;
+  }
+
+.exercises-list__headers {
+  display: flex;
+  flex-direction: row;
+  color: #7883a0;
+}
+
+.exercises-list__headers__category {
+  float: left; 
+  width: 20%; 
+  margin-left: 20px;
+}
+
+  .exercises-list__headers__left {
+    float: left; 
+    width: 40%; 
+    margin-right: 70px;
+  }
+
+  .exercises-list__headers__right {
+    float: right; 
+    width: 6%; 
+    margin-left: 30px;
+    color: #7883a0;
+  }

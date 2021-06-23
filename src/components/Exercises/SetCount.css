@@ -1,0 +1,36 @@
+.set-count {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 5.5rem;
+    background-color: #292d38;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .set-count__month {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+  }
+  
+  .set-count__year {
+    font-size: 0.75rem;
+  }
+  
+  .set-count__day {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .set-count input {
+    font: inherit;
+    font-size: 0.75rem;
+    border: 1px solid #353a49;
+    max-width: 60%;
+    background-color: #292d38;
+    color: white;
+    text-align: center;
+  }

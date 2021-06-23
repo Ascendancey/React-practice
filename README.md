@@ -1,6 +1,6 @@
 # About
 
-This repository is used to store the code while practicing React.js.
+This is the example project of combining elements for a list of training sets.
 
 # Getting Started with Create React App
 
