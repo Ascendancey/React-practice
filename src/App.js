@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
 import ExerciseForm from './components/Exercises/ExerciseForm';
-// import Expenses from "./components/Expenses/Expenses";
-// import NewExpense from "./components/NewExpense/NewExpense";
 
 const DUMMY_EXPENSES = [
   {

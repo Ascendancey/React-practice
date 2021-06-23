@@ -2,6 +2,20 @@
 
 This is the example project of combining elements for a list of training sets.
 
+## Firebase
+
+Please put your firebase credentials to /src/app/FirebaseConfig.js in the following view:
+
+export const firebaseConfig = {
+    apiKey: "KEY",
+      authDomain: "DOMAIN",
+      projectId: "PROJECTID",
+      storageBucket: "STORAGEBUCKET",
+      messagingSenderId: "MSGID",
+      appId: "APPID",
+      measurementId: "MSMNTID"
+  };
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
