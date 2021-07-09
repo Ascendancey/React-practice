@@ -4,10 +4,6 @@ import Card from "../UI/Card";
 import "./ExerciseList.css";
 import ExerciseItem from "./ExerciseItem";
 
-import {
-  increment,
-} from "../../features/exercise/exerciseSlice";
-
 const ExerciseList = (props) => {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
@@ -23,7 +19,7 @@ const ExerciseList = (props) => {
           <h4 className="exercises-list__headers__right">RPE</h4>
         </div>
         <ExerciseItem
-          key={1}
+          exerciseid="0"
           category={"Push"}
           title={"1CT PAUSE BENCH PRESS"}
           loadneed={12}
@@ -34,7 +30,7 @@ const ExerciseList = (props) => {
           rpedone={10}
         />
         <ExerciseItem
-          key={2}
+          exerciseid="1"
           category={"Pull"}
           title={"EXAMPLE EXERCISE 2"}
           loadneed={23}
@@ -45,10 +41,7 @@ const ExerciseList = (props) => {
           rpedone={10}
         />
         <label>{count}</label>
-        <button type="submit" onClick={() => dispatch(increment("1"))}>
-          Submit
-        </button>
-        <button onClick={() => dispatch(increment("1"))}>!!!</button>
+        <button type="submit" onClick={() => alert("Submit placeholder")}>Submit</button>
       </div>
     </Card>
   );
