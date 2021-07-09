@@ -1,20 +1,26 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import "./SetCount.css";
 
+import { newValue } from "../../features/exercise/exerciseSlice";
+
 const SetCount = (props) => {
-  // const month = props.date.toLocaleString("en-US", { month: "long" });
-  // const day = props.date.toLocaleString("en-US", { day: "2-digit" });
-  // const year = props.date.getFullYear();
+  const count = useSelector(selectCount);
+  const dispatch = useDispatch();
 
   return (
     <div className="set-count">
       <div className="set-count__month">{props.need}</div>
-      {/* <div className="set-count__year">{year}</div>
-      <div className="set-count__day">{day}</div> */}
-      <input value={props.done}></input>
+      <input
+        defaultvalue={props.done}
+        onChange={(event) => dispatch(newValue(event.target.value))}
+        // onChange={(event) => dispatch(newValue(event.target.value))}
+      ></input>
     </div>
   );
 };
+
+export const selectCount = (state) => state.counter.value;
 
 export default SetCount;

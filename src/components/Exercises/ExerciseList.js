@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import Card from "../UI/Card";
@@ -6,11 +5,7 @@ import "./ExerciseList.css";
 import ExerciseItem from "./ExerciseItem";
 
 import {
-  decrement,
   increment,
-  incrementByAmount,
-  // incrementAsync,
-  // selectCount
 } from "../../features/exercise/exerciseSlice";
 
 const ExerciseList = (props) => {
@@ -23,7 +18,6 @@ const ExerciseList = (props) => {
         <div className="exercises-list__headers">
           <h4 className="exercises-list__headers__category">Category</h4>
           <h4 className="exercises-list__headers__left">Exercise</h4>
-
           <h4 className="exercises-list__headers__right">LOAD</h4>
           <h4 className="exercises-list__headers__right">REPS</h4>
           <h4 className="exercises-list__headers__right">RPE</h4>
