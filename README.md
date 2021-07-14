@@ -1,3 +1,9 @@
+# Check out the branches of this repository for different exercises!
+
+In case you are curious about some parts of the code you are welcome to contact we via e-mail mentioned in my profile.
+
+Thank you for your interest!
+
 # About
 
 This repository is used to store the code while practicing React.js.
